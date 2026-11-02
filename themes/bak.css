@@ -1,0 +1,26 @@
+/* garden theme, 2023 */
+body { margin:0; background:#f4f1e4; color:#2b2b22; font:17px/1.65 Georgia, "Iowan Old Style", serif; }
+a { color:#7b3fa0; text-decoration:underline dotted; text-underline-offset:3px; } a:hover { text-decoration-style:solid; }
+.wrap { max-width:900px; margin:0 auto; padding:24px 20px; display:grid; grid-template-columns:1fr 200px; gap:36px; }
+header { grid-column:1/-1; border-bottom:1px dashed #b8b39a; padding-bottom:10px; }
+header h1 { margin:0; font-weight:400; font-size:30px; } header h1 a { color:#2b2b22; text-decoration:none; }
+header p { margin:2px 0 0; color:#6a6650; font-size:15px; }
+header nav { font:13px "IBM Plex Mono", monospace; margin-top:6px; } header nav a { margin-right:14px; }
+main { min-width:0; }
+.st { font:12px "IBM Plex Mono", monospace; color:#5f7a3a; margin:0 0 14px; }
+main h2 { font-weight:400; font-size:30px; line-height:1.2; margin:0 0 4px; }
+main p { margin:0 0 1em; }
+.photo img { max-width:100%; height:auto; border-radius:3px; } .photo span { display:block; font-size:13px; color:#6a6650; font-style:italic; }
+.backlinks { border-top:1px dashed #b8b39a; margin-top:24px; padding-top:8px; font-size:14px; color:#555; }
+.notes h3 { font:600 13px "IBM Plex Mono", monospace; color:#5f7a3a; margin:20px 0 6px; text-transform:uppercase; letter-spacing:.06em; }
+.notes ul { margin:0; padding-left:18px; } .notes li small { color:#888; font:12px "IBM Plex Mono", monospace; }
+aside { font:13px/1.5 "IBM Plex Mono", monospace; color:#555; }
+aside h3 { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:#2b2b22; margin:0 0 4px; }
+aside ul { margin:0 0 16px; padding-left:16px; }
+.btn88 { display:block; width:88px; height:31px; box-sizing:border-box; border:1px solid #000; font:9px/1.05 Verdana, sans-serif; padding:3px; margin:0 0 5px; text-decoration:none; }
+.b-k { background:linear-gradient(90deg,#003333 0 30%,#ffcc00 30%); color:#000; padding-left:30px; }
+.b-t { background:#222; color:#7f7; } .b-n { background:#fff; color:#7b3fa0; } .b-w { background:#5f7a3a; color:#fff; }
+.ring { border:1px solid #b8b39a; text-align:center; padding:4px; }
+.navigation { display:flex; justify-content:space-between; font:13px "IBM Plex Mono", monospace; margin:20px 0; }
+footer { grid-column:1/-1; font:12px "IBM Plex Mono", monospace; color:#888; border-top:1px dashed #b8b39a; padding-top:8px; }
+@media (max-width:700px) { .wrap { grid-template-columns:1fr; } }
