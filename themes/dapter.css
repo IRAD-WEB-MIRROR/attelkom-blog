@@ -1,0 +1,40 @@
+/* Theme Name: Däpter. Exercise book, for school diaries. Kündölük 2005, A. Ten (Attelkom web dept). */
+body { margin:0; padding:20px 0 30px; background:#003333 url(dapter-desk.gif); font:13px/22px "Comic Sans MS", "Segoe Print", "Trebuchet MS", cursive; color:#1c2a3a; }
+a { color:#1b4f9c; } a:hover { color:#c0392b; }
+#book { width:780px; margin:0 auto; position:relative; background:#fffef6; box-shadow:5px 6px 0 rgba(0,0,0,.35); }
+#rings { position:absolute; left:10px; top:10px; bottom:10px; width:18px; background:radial-gradient(circle at 9px 9px, #003333 5px, #9aa 6px, transparent 7px) 0 0/18px 30px repeat-y; }
+#paper { margin-left:40px; padding:0 0 22px; background:repeating-linear-gradient(#fffef6 0, #fffef6 21px, #b9d4e6 21px, #b9d4e6 22px); border-left:2px solid #e08a8a; }
+#head { padding:18px 24px 6px; position:relative; }
+#head h1 { margin:0; font:bold 34px/44px "Comic Sans MS", cursive; color:#003333; }
+#head h1 a { color:#003333; text-decoration:none; }
+#head .tag { color:#c0392b; font-size:14px; }
+#head .sticker { position:absolute; right:22px; top:16px; background:#ffcc00; padding:4px 12px; transform:rotate(3deg); font-size:12px; box-shadow:1px 2px 2px rgba(0,0,0,.25); }
+#nav { padding:0 24px; font-size:14px; }
+#nav a { margin-right:18px; }
+#nav a.current { color:#c0392b; text-decoration:none; border-bottom:2px wavy #c0392b; }
+#cols { overflow:hidden; padding:10px 24px 0; }
+#main { float:left; width:470px; }
+#side { float:right; width:200px; }
+.post { margin:0 0 22px; }
+.post h2 { margin:0; font:bold 21px/44px "Comic Sans MS", cursive; }
+.post h2 a { color:#003333; text-decoration:none; }
+.post .date { color:#c0392b; font-size:12px; line-height:22px; }
+.post p { margin:0 0 22px; }
+.post .meta { font-size:11px; color:#667; }
+.photo { display:inline-block; background:#fff; padding:6px 6px 4px; margin:4px 0 22px; box-shadow:1px 2px 4px rgba(0,0,0,.3); transform:rotate(-1.5deg); position:relative; max-width:94%; }
+.photo:before { content:""; position:absolute; top:-9px; left:40%; width:60px; height:18px; background:rgba(255,226,110,.8); transform:rotate(-4deg); }
+.photo img { display:block; max-width:100%; height:auto; }
+.photo span { display:block; font-size:12px; color:#555; text-align:center; line-height:20px; }
+.note { background:#ffcc00; padding:8px 10px; margin:0 0 18px; box-shadow:2px 3px 3px rgba(0,0,0,.25); font-size:12px; line-height:18px; }
+.note:nth-child(even) { background:#cdeef0; transform:rotate(1.5deg); }
+.note:nth-child(odd) { transform:rotate(-1deg); }
+.note h3 { margin:0 0 4px; font-size:14px; }
+.note ul { margin:0; padding-left:16px; }
+.comments { border-top:2px dashed #b9d4e6; padding-top:10px; }
+.comments .c { margin:0 0 12px; }
+.comments .c b { color:#003333; }
+.comments .c small { color:#888; }
+.navigation { overflow:hidden; font-size:13px; } .navigation .l { float:left; } .navigation .r { float:right; }
+#foot { text-align:center; font-size:11px; color:#667; padding:14px 0 0; }
+@media (max-width:800px) { body { padding:0; } #book { width:auto; box-shadow:none; } #rings { display:none; } #paper { margin-left:0; border-left:0; }
+  #main, #side { float:none; width:auto; } .photo { transform:none; } #head .sticker { position:static; display:inline-block; } }

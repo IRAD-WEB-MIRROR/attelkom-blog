@@ -1,0 +1,31 @@
+/* Theme Name: Jaltyrak. Glossy. Kündölük 2.0 (2008). */
+body { margin:0; background:#fff linear-gradient(#d9eefa, #fff 400px) no-repeat; font:12px/1.55 "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; color:#333; }
+a { color:#1d6fae; text-decoration:none; } a:hover { color:#e2531d; text-decoration:underline; }
+#wrap { width:800px; margin:0 auto; }
+#top { height:78px; margin-top:12px; border-radius:12px 12px 0 0; background:linear-gradient(#79c1ef, #2c8fd6 50%, #1d7cc4 51%, #4aa6e4); position:relative; padding:0 22px; box-shadow:0 2px 6px rgba(0,60,120,.3); }
+#top h1 { margin:0; padding-top:12px; font:bold 30px/34px "Arial Rounded MT Bold", Arial, sans-serif; letter-spacing:-1.5px; color:#fff; text-shadow:0 1px 0 #1a5f96; }
+#top h1 a { color:#fff; }
+#top .tag { color:#e6f4ff; font-size:12px; }
+.beta { position:absolute; right:26px; top:12px; width:54px; height:54px; border-radius:50%; background:radial-gradient(circle at 40% 35%, #ffc35a, #ff8a00 60%); color:#fff; font:bold 12px Arial; display:flex; align-items:center; justify-content:center; transform:rotate(14deg); box-shadow:0 0 0 4px #ffd36b, 0 2px 6px rgba(0,0,0,.3); }
+#tabs { padding:0 20px; overflow:hidden; }
+#tabs a { float:left; margin-right:4px; background:linear-gradient(#fff,#e2eef7); border:1px solid #9cc4e4; border-top:0; border-radius:0 0 9px 9px; padding:4px 14px; font-weight:bold; }
+#tabs a.current { background:#fff; color:#e2531d; }
+#cols { display:flex; gap:18px; padding:18px 0; }
+#main { flex:1; min-width:0; }
+#side { width:200px; flex:none; }
+.post { background:#fff; border:1px solid #cfe3f2; border-radius:10px; padding:12px 16px; margin:0 0 16px; box-shadow:0 3px 6px rgba(0,80,140,.08); }
+.post h2 { margin:0; font:bold 18px Arial, sans-serif; letter-spacing:-.5px; }
+.post h2 a { color:#e2531d; }
+.post .date { color:#89a; font-size:11px; }
+.post .meta { font-size:11px; color:#89a; border-top:1px solid #e3eef6; padding-top:6px; margin-top:8px; }
+.post .meta .tagl a { background:#e8f4fc; border-radius:8px; padding:0 6px; }
+.photo img { border-radius:8px; max-width:100%; height:auto; box-shadow:0 2px 6px rgba(0,0,0,.25); } .photo span { display:block; color:#89a; font-size:11px; }
+.widget { background:#fff; border:1px solid #cfe3f2; border-radius:10px; padding:10px 12px; margin:0 0 14px; }
+.widget h3 { margin:-10px -12px 8px; padding:5px 12px; border-radius:10px 10px 0 0; background:linear-gradient(#f4fafe,#dcecf8); color:#1d6fae; font-size:12px; }
+.widget ul { margin:0; padding-left:16px; }
+.cloud a { display:inline-block; margin:0 4px 2px 0; line-height:1.1; }
+.rss { display:inline-block; background:linear-gradient(#ffb04a,#f07c00); color:#fff !important; font-weight:bold; border-radius:5px; padding:2px 8px; }
+.comments .c { background:#f4fafe; border-radius:8px; padding:6px 10px; margin:0 0 8px; }
+.navigation { overflow:hidden; } .navigation .l { float:left; } .navigation .r { float:right; }
+#foot { text-align:center; color:#89a; font-size:11px; padding:10px 0 20px; border-top:1px solid #cfe3f2; }
+@media (max-width:820px) { #wrap { width:auto; padding:0 8px; } #cols { display:block; } #side { width:auto; } .beta { display:none; } }

@@ -1,0 +1,89 @@
+/*
+Theme Name: Kündölük Standard (toolor)
+Theme URI: http://blog.attelkom.net/help/themes.html
+Description: Standard theme of the Attelkom blog service. Fixed 760px layout, picture header, date badges.
+Version: 1.3 (2006)
+Author: V. Kho, Attelkom web department, Talas
+*/
+body { margin:0; padding:18px 0 34px; background:#e7ecf2 repeating-linear-gradient(45deg,#e7ecf2 0,#e7ecf2 6px,#dde4ec 6px,#dde4ec 7px);
+  font:12px/1.6 "Trebuchet MS", Verdana, Tahoma, Arial, sans-serif; color:#333333; text-align:center; }
+a { color:#2a5a8c; text-decoration:none; }
+a:hover { color:#c2561c; text-decoration:underline; }
+#page { width:760px; margin:0 auto; text-align:left; background:#ffffff; border:1px solid #8a8a8a;
+  box-shadow:0 0 0 4px rgba(255,255,255,.55), 0 0 14px 4px rgba(0,0,0,.45); }
+#header { height:150px; position:relative; background:#666 url(toolor.jpg) no-repeat 0 0; }
+#header h1 { position:absolute; left:22px; bottom:34px; margin:0; font:bold 30px Georgia, "Times New Roman", serif;
+  letter-spacing:-1px; text-shadow:1px 1px 2px #000; }
+#header h1 a { color:#fff; }
+#header h1 a:hover { text-decoration:none; color:#fff; }
+#header .description { position:absolute; left:24px; bottom:14px; color:#f4f4f4; font:italic 13px Georgia, serif; text-shadow:1px 1px 1px #000; }
+#tabs { background:#ffffff; border-top:1px solid #c9d4e0; border-bottom:3px solid #56677d; padding:0 0 0 14px; height:25px; }
+#tabs a { float:left; display:block; color:#333333; font:normal 13px/14px Georgia, "Times New Roman", serif; font-variant:small-caps; letter-spacing:.5px;
+  padding:5px 11px 6px; border-right:1px solid #c9d4e0; }
+#tabs a.current { background:#dfe7f0; color:#1f3f63; }
+#tabs a:hover { background:#dfe7f0; text-decoration:none; color:#1f3f63; }
+#tabs .right { float:right; border:0; border-left:1px solid #c9d4e0; font-weight:bold; }
+#wrap { overflow:hidden; background:#ffffff linear-gradient(to right, #ffffff 0, #ffffff 538px, #56677d 538px); }
+#content { float:left; width:494px; padding:20px 22px 10px 22px; }
+#sidebar { float:right; width:198px; padding:16px 12px 20px 12px; font-size:11px; color:#e8edf3; background:#56677d; }
+#sidebar a { color:#ffffff; }
+.adbox { text-align:center; margin:0 0 16px; min-height:2px; }
+.post { margin:0 0 28px; padding:0 0 10px; border-bottom:1px dotted #c9d4e0; overflow:hidden; }
+.datebadge { float:left; width:40px; margin:2px 10px 4px 0; text-align:center; background:#3d6591; color:#fff;
+  font:bold 10px Verdana, sans-serif; text-transform:uppercase; padding:3px 0 2px; border-radius:3px; }
+.datebadge b { display:block; font:bold 18px Georgia, serif; line-height:20px; }
+.datebadge i { display:block; font:normal 9px Verdana, sans-serif; font-style:normal; opacity:.85; }
+.post h2 { margin:0; font:bold 18px Georgia, "Times New Roman", serif; letter-spacing:-.5px; }
+.post h2 a { color:#1f3f63; }
+.post .byline { color:#999; font-size:10px; display:block; margin:1px 0 0; }
+.entry { clear:left; padding:6px 0 0; }
+.entry p { margin:0 0 11px; }
+.entry img { border:1px solid #c9d4e0; padding:3px; background:#fff; }
+.entry blockquote { margin:0 0 11px 10px; padding:2px 0 2px 12px; border-left:3px solid #c9d4e0; color:#777; font-style:italic; }
+.postmetadata { clear:both; font-size:10px; color:#888; background:#dfe7f0; padding:3px 6px; margin:6px 0 0; }
+.navigation { overflow:hidden; margin:0 0 14px; font-size:11px; }
+.navigation .alignleft { float:left; } .navigation .alignright { float:right; }
+h3.pagetitle { font:bold 15px Georgia, serif; margin:0 0 16px; color:#1f3f63; border-bottom:1px solid #c9d4e0; padding-bottom:4px; }
+h3#comments { font:bold 14px Georgia, serif; margin:24px 0 10px; color:#1f3f63; }
+ol.commentlist { margin:0; padding:0; list-style:none; }
+ol.commentlist li { margin:0 0 8px; padding:8px 10px 2px; border:1px solid #c9d4e0; }
+ol.commentlist li.alt { background:#dfe7f0; }
+ol.commentlist cite { font-style:normal; font-weight:bold; }
+ol.commentlist .commentmetadata { display:block; font-size:10px; color:#999; margin:0 0 4px; }
+ol.commentlist p { margin:0 0 7px; }
+.nocomments { color:#999; font-style:italic; text-align:center; margin:16px 0; }
+#commentform { border:1px solid #c9d4e0; padding:8px 10px; background:#dfe7f0; font-size:11px; }
+#commentform input, #commentform textarea { font:11px Verdana, sans-serif; border:1px solid #aaa; padding:2px; }
+#sidebar h2 { margin:0 0 7px; padding:0 0 3px; color:#ffffff; font:normal 18px Georgia, "Times New Roman", serif; letter-spacing:-.3px; border-bottom:1px solid #7a8aa0; }
+#sidebar .widget { margin:0 0 18px; }
+#sidebar ul { margin:0; padding:0; list-style:none; }
+#sidebar li { margin:0 0 1px; padding:2px 6px 2px 10px; font:12px Georgia, "Times New Roman", serif; }
+#sidebar li.current { background:#ffffff; color:#333333; margin-left:-12px; padding-left:22px; position:relative; }
+#sidebar li.current a { color:#1f3f63; }
+#sidebar li.current:after { content:""; position:absolute; right:-14px; top:6px; border:5px solid transparent; border-right-color:#c8102e; border-right-width:9px; }
+#sidebar .widget p { margin:0 0 6px; padding:0 2px; }
+#wp-calendar { width:100%; border-collapse:collapse; font-size:10px; text-align:center; }
+#wp-calendar caption { font:italic 12px Georgia, serif; margin:0 0 3px; }
+#wp-calendar th { background:rgba(255,255,255,.12); font-weight:bold; padding:1px; }
+#wp-calendar td { padding:1px; }
+#wp-calendar td a { font-weight:bold; text-decoration:underline; }
+#wp-calendar td#today { outline:1px solid #7a8aa0; }
+#wp-calendar tfoot td { text-align:left; } #wp-calendar tfoot td.next { text-align:right; }
+#searchform input { width:130px; font:11px Verdana, sans-serif; border:1px solid #aaa; }
+#footer { clear:both; border-top:1px solid #a8a8a8; background:#dcdcdc linear-gradient(#e6e6e6,#d2d2d2); padding:9px 14px 8px; font:10px Verdana, sans-serif; color:#555; text-align:center; letter-spacing:2px; text-transform:uppercase; }
+#footer p { margin:2px 0; }
+#footer a { color:#444; text-decoration:underline; }
+.counter { display:inline-block; background:#000; color:#7f7; font:bold 11px "Courier New", monospace; padding:1px 4px; letter-spacing:2px; border:1px inset #888; }
+@media (max-width: 780px) {
+  body { padding:0; background:#ffffff; font-size:14px; }
+  #page { width:auto; border:0; }
+  #header { background-size:cover; background-position:center; height:120px; }
+  #wrap { background:#ffffff; }
+  #content, #sidebar { float:none; width:auto; padding:14px; }
+  #sidebar { font-size:13px; }
+  #sidebar li.current { margin-left:0; }
+  #sidebar li.current:after { display:none; }
+  #footer { letter-spacing:0; text-transform:none; }
+  #tabs { height:auto; overflow:hidden; }
+  .entry img { max-width:100%; height:auto; }
+}

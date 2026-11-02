@@ -1,0 +1,9 @@
+/* by meerim ^_^ */
+body { background:#140c22 radial-gradient(#ffffff 1px, transparent 1px) 0 0/23px 23px; }
+#header h1 a { color:#ffb8ec; text-shadow:0 0 6px #ff4fc3, 1px 1px 0 #000; }
+#header .description { font-family:"Comic Sans MS", cursive; color:#ffe4f7; }
+.entry, #sidebar { font-family:"Comic Sans MS", "Trebuchet MS", cursive; }
+.post h2 a:before { content:"\2605 "; color:#ffd23c; }
+ol.commentlist li { border:1px dashed #c0398e; }
+ol.commentlist li.alt { background:#2a1a44; }
+#footer { background:#22163a; }

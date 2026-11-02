@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /login.html
+Disallow: /search.html
+
+Sitemap: https://blog.attelkom.net/sitemap.xml

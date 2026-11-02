@@ -1,0 +1,7 @@
+.entry .foto { text-align:center; font-size:11px; color:#555; margin:8px 0 12px; }
+.entry .foto img, .entry .album img { border:1px solid #999; padding:3px; background:#fff; max-width:100%; height:auto; }
+.entry .album { display:inline-block; vertical-align:top; width:150px; margin:0 6px 12px 0; text-align:center; font-size:10px; color:#444; }
+.entry .album b { display:block; color:#222; font-size:11px; margin-top:2px; }
+.entry .note { background:#fffbe0; border:1px dashed #d6c36a; padding:6px 8px; font-size:11px; margin:8px 0; }
+.entry .de { color:#555; font-style:italic; }
+.entry .klass td { padding:2px 6px; border-bottom:1px dotted #ddd; font-size:11px; } .entry .klass td.f { color:#2a7a2a; }

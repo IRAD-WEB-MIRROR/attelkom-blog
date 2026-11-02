@@ -1,0 +1,13 @@
+/* my own colours - Azamat, 2007 */
+body { background:#efe6d2; }
+#page { background:#fffdf6; }
+#tabs { background:#fffdf6; border-bottom-color:#8a6a3c; }
+#wrap { background:#fffdf6 linear-gradient(to right, #fffdf6 0, #fffdf6 538px, #8a6a3c 538px); }
+#sidebar { background:#8a6a3c; color:#f8efdc; }
+#sidebar h2 { border-bottom-color:#a88a5c; }
+#sidebar li.current, #tabs a.current, #tabs a:hover { background:#f5eedc; }
+.datebadge { background:#4a7088; }
+.post h2 a, h3.pagetitle, h3#comments, #sidebar li.current a { color:#6a4414; }
+#content a { color:#8a5a1c; }
+.postmetadata, ol.commentlist li.alt { background:#f5eedc; }
+#header h1 { font-family:"Monotype Corsiva", "Comic Sans MS", cursive; font-size:34px; }
