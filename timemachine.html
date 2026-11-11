@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content="Kündölük 3.4.2" />
+<title>Time machine - Kündölük</title>
+<meta name="description" content="Pick a year and read a Kündölük post written that year, from any blog." />
+<link rel="stylesheet" href="portal.css?v=2" type="text/css" media="screen" />
+<link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+<link rel="canonical" href="https://blog.attelkom.net/timemachine.html" />
+<meta property="og:title" content="Time machine - Kündölük" />
+<meta property="og:description" content="Pick a year and read a Kündölük post written that year, from any blog." />
+<meta property="og:url" content="https://blog.attelkom.net/timemachine.html" />
+<meta property="og:image" content="https://blog.attelkom.net/images/share.jpg?v=2" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<script src="https://ads.attelkom.net/serve.js" data-theme="dialup local" defer></script>
+<script>window.goatcounter=new Object();goatcounter.path=p=>location.host+p;</script>
+<script data-goatcounter="https://irad.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QTS2XFLJD7"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-QTS2XFLJD7');</script>
+</head>
+<body>
+<div id="wrap">
+<div id="top"><a href="index.html"><img src="images/kundoluk.gif?v=2" width="300" height="70" alt="Kündölük - Attelkom blogs" border="0" /></a>
+<div class="lang"><b>English</b> | <a href="index.html">Iradi</a> | <a href="index.html">Русский</a></div>
+<div class="back"><a href="https://attelkom.net/">attelkom.net</a> &middot; <a href="https://wwv.attelkom.net/users/">MyPage@Attelkom</a></div></div>
+<div id="menu"><a href="index.html">Home</a><a href="directory.html">All blogs</a><a href="timemachine.html">Time machine</a><a href="register.html">Register</a><a href="login.html">Log in</a><a href="help.html">Help</a><a href="rules.html">Rules</a></div>
+<div id="cols">
+<div id="main">
+<h1>Time machine</h1>
+<p>Kündölük has kept the diaries of Iradis since November 2004. Choose a year and read what somebody wrote that year: a random post from any blog. Press <b>Next</b> for another post from the same year.</p>
+<div id="tm-years" class="box"><a href="timemachine.html#2005" data-y="2005">2005</a> <a href="timemachine.html#2006" data-y="2006">2006</a> <a href="timemachine.html#2007" data-y="2007">2007</a> <a href="timemachine.html#2008" data-y="2008">2008</a> <a href="timemachine.html#2009" data-y="2009">2009</a> <a href="timemachine.html#2010" data-y="2010">2010</a> <a href="timemachine.html#2011" data-y="2011">2011</a> <a href="timemachine.html#2012" data-y="2012">2012</a> <a href="timemachine.html#2013" data-y="2013">2013</a> <a href="timemachine.html#2014" data-y="2014">2014</a> <a href="timemachine.html#2015" data-y="2015">2015</a> <a href="timemachine.html#2016" data-y="2016">2016</a> <a href="timemachine.html#2017" data-y="2017">2017</a> <a href="timemachine.html#2018" data-y="2018">2018</a> <a href="timemachine.html#2019" data-y="2019">2019</a> <a href="timemachine.html#2020" data-y="2020">2020</a> <a href="timemachine.html#2021" data-y="2021">2021</a> <a href="timemachine.html#2022" data-y="2022">2022</a> <a href="timemachine.html#2023" data-y="2023">2023</a> <a href="timemachine.html#2024" data-y="2024">2024</a> <a href="timemachine.html#2025" data-y="2025">2025</a> <a href="timemachine.html#2026" data-y="2026">2026</a></div>
+<div id="tm-out"><p class="small">Choose a year above.</p></div>
+<noscript><div class="notice">The time machine needs JavaScript. All blogs are in the <a href="directory.html">directory</a>.</div></noscript>
+<p class="small">Only blogs that are open to everybody take part. Closed blogs and private posts are never shown.</p>
+<script src="timemachine.js"></script>
+<script>
+(function () {
+  var P = window.TM_POSTS || [], Y = {}, cur = null, seen = {};
+  P.forEach(function (r, i) { var y = r[3].slice(0, 4); (Y[y] = Y[y] || []).push(i); });
+  var years = Object.keys(Y).sort();
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function d(s) { var p = s.split("-"); return p[2] + "." + p[1] + "." + p[0]; }
+  function pick(y) {
+    var list = Y[y]; if (!list) return;
+    seen[y] = seen[y] || [];
+    if (seen[y].length >= list.length) seen[y] = [];
+    var free = list.filter(function (i) { return seen[y].indexOf(i) < 0; }), i = free[Math.floor(Math.random() * free.length)];
+    seen[y].push(i); cur = y;
+    var r = P[i], other = years.filter(function (x) { return x !== y; }), ay = other[Math.floor(Math.random() * other.length)];
+    document.getElementById("tm-out").innerHTML = '<div class="tm-card"><div class="tm-year">' + y + '</div><div class="small">' + d(r[3]) + ' &middot; <a href="' + r[0] + '/index.html">' + esc(r[1]) + '</a> &middot; ' + esc(r[2]) + '</div>' +
+      '<h2><a href="' + r[0] + '/' + r[5] + '">' + esc(r[4]) + '</a></h2><p>' + esc(r[6]) + '</p><p><a href="' + r[0] + '/' + r[5] + '"><b>Read the post &raquo;</b></a></p>' +
+      '<p class="tm-nav"><a href="#' + y + '" id="tm-next">Next from ' + y + ' &raquo;</a> &nbsp; <a href="#' + ay + '" id="tm-other">Another year (' + ay + ') &raquo;</a></p>' +
+      '<p class="small">' + Y[y].length + ' posts from ' + y + ' on Kündölük.</p></div>';
+    document.getElementById("tm-next").onclick = function (e) { e.preventDefault(); pick(y); };
+    document.getElementById("tm-other").onclick = function (e) { e.preventDefault(); location.hash = ay; };
+    Array.prototype.forEach.call(document.querySelectorAll("#tm-years a"), function (a) { a.className = a.getAttribute("data-y") === y ? "on" : ""; });
+  }
+  function fromHash() { var y = location.hash.slice(1); if (Y[y]) pick(y); }
+  window.addEventListener("hashchange", fromHash);
+  Array.prototype.forEach.call(document.querySelectorAll("#tm-years a"), function (a) {
+    a.addEventListener("click", function (e) { var y = a.getAttribute("data-y"); if (location.hash === "#" + y) { e.preventDefault(); pick(y); } });
+  });
+  fromHash();
+})();
+</script>
+</div>
+<div id="side">
+<h2>Log in</h2><div class="box"><form action="login.html" method="get">
+Attelkom login:<br /><input type="text" name="u" size="18" /><br />Password:<br /><input type="password" name="p" size="18" /><br />
+<input type="submit" value="Log in" /> <a href="help.html#password">Forgot?</a></form></div><h2>By year</h2><div class="box"><a href="timemachine.html#2005">2005</a>: 41 posts<br /><a href="timemachine.html#2006">2006</a>: 85 posts<br /><a href="timemachine.html#2007">2007</a>: 65 posts<br /><a href="timemachine.html#2008">2008</a>: 66 posts<br /><a href="timemachine.html#2009">2009</a>: 67 posts<br /><a href="timemachine.html#2010">2010</a>: 37 posts<br /><a href="timemachine.html#2011">2011</a>: 53 posts<br /><a href="timemachine.html#2012">2012</a>: 47 posts<br /><a href="timemachine.html#2013">2013</a>: 51 posts<br /><a href="timemachine.html#2014">2014</a>: 44 posts<br /><a href="timemachine.html#2015">2015</a>: 51 posts<br /><a href="timemachine.html#2016">2016</a>: 46 posts<br /><a href="timemachine.html#2017">2017</a>: 40 posts<br /><a href="timemachine.html#2018">2018</a>: 27 posts<br /><a href="timemachine.html#2019">2019</a>: 23 posts<br /><a href="timemachine.html#2020">2020</a>: 28 posts<br /><a href="timemachine.html#2021">2021</a>: 30 posts<br /><a href="timemachine.html#2022">2022</a>: 40 posts<br /><a href="timemachine.html#2023">2023</a>: 47 posts<br /><a href="timemachine.html#2024">2024</a>: 36 posts<br /><a href="timemachine.html#2025">2025</a>: 34 posts<br /><a href="timemachine.html#2026">2026</a>: 54 posts</div>
+</div>
+</div>
+<div id="foot">&copy; 2004-2026 Attelkom JSC, Talas. Kündölük 3.4.2. Kündölük is a free service for Attelkom subscribers. Authors are responsible for the content of their blogs.<br />Questions: <a href="mailto:blog@attelkom.net">blog@attelkom.net</a> &middot; Abuse: <a href="mailto:abuse@attelkom.net">abuse@attelkom.net</a></div>
+</div>
+<div class="adbox" style="text-align:center;margin:10px 0"><div class="jarnama" data-size="468x60"></div></div>
+</body>
+</html>
